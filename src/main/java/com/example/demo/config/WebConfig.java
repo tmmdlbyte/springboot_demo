@@ -1,15 +1,17 @@
-package com.example.demo.config;
+package com.example.helloworld.config;
 
-import com.example.demo.interceptor.LoginInterceptor;
+import com.example.helloworld.interceptor.LoginInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
+
     @Override
-    public void addInterceptors(InterceptorRegistry registry){
-//        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/user/**");
-        registry.addInterceptor(new LoginInterceptor());
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor( new LoginInterceptor()).addPathPatterns("/user/**");
     }
+
+
 }
