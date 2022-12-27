@@ -1,6 +1,6 @@
-package com.example.helloworld.config;
+package com.example.demo.config;
 
-import com.example.helloworld.interceptor.LoginInterceptor;
+import com.example.demo.interceptor.LoginInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
